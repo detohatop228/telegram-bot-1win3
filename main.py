@@ -11,14 +11,14 @@ bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
 ref_button = InlineKeyboardMarkup().add(
-    InlineKeyboardButton(text="🔥 Нова гра!", url="https://1whecs.life/?open=register&p=cczw")
+    InlineKeyboardButton(text="🎁 Забрати подарунок", url="https://1whecs.life/?open=register&p=cczw")
 )
 
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
     await message.answer(
         "Привіт! Багато хто питає, як я заробляю з телефону 📱\n\n"
-        "Ось ігрова біржа – без верифікації, швидкі виплати!\n"
+        "Ось ігрова біржа – без верифікації, мега швидкі виплати!\n"
         "👆 Тисни кнопку, щоб спробувати!",
         reply_markup=ref_button
     )
