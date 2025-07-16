@@ -11,7 +11,7 @@ bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
 ref_button = InlineKeyboardMarkup().add(
-    InlineKeyboardButton(text="🔥 Нова гра!", url="https://lhcets.life/?open=register&app=cczh")
+    InlineKeyboardButton(text="🔥 Нова гра!", url="https://1whecs.life/?open=register&p=cczw")
 )
 
 @dp.message_handler(commands=['start'])
